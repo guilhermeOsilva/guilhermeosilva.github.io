@@ -8,6 +8,7 @@
   font-optical-sizing: auto;
   font-style: normal;
   text-decoration: none;
+  overflow-x: hidden;
 }
 
 header {
@@ -45,7 +46,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 nav {
-  height: 40px;
+  height: 8vh;
   color: whitesmoke;
   /* background: linear-gradient(
     90deg,
@@ -53,10 +54,10 @@ nav {
     rgba(40, 7, 251, 0.436) 84%,
     rgba(255, 0, 25, 0.093) 100%
   ); */
-  background: rgba(0, 0, 0, 0.829);
+  background: #5e9763ec;
   display: flex;
   position: fixed;
-  width: 100%;
+  width: 70%;
   border-radius: 0 0 20px 20px;
   justify-content: center;
   align-items: center;
