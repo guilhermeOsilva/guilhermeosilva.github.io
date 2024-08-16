@@ -15,6 +15,7 @@ header {
 }
 
 main {
+  overflow: hidden;
   border: solid 1px;
   color: whitesmoke;
   background: rgb(2, 0, 36);
@@ -906,7 +907,7 @@ section #scene #right-zone {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .container {
   }
 
