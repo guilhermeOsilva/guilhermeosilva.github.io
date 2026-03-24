@@ -1,58 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Guilherme Henrique Oliveira siva" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/projetos.css">
-    <title>Meu Portfolio</title>
-  </head>
+<html lang="pt-BR">
 
-  <body>
-    <header>
-      <div class="div-nav">
-        <nav>
-          <ul class="nav-menu">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#cards">Tecnologias</a></li>
-            <li class="nav-item"><a class="nav-link" href="Projetos.html">Projetos</a></li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <!-- <div class="div-video">
-        <video autoplay loop>
-          <source
-            src="img/arcane-jinx-grenade-moewalls-com.mp4"
-            type="video/mp4"
-          />
-        </video> -->
-      </div>
-      <section class="sec-container">
-        <div class="container">
-          <h1>This is my Portfolio</h1>
-          <br>
-          <h2>Guilherme Henrique Oliveira Silva</h2>
-          <div class="img-banner">
-  
-      <section class="relatorios">
-        <h1>Confira Meus Projetos</h1>
-       
-        <div class="dash-one">
-          <h4>Clique e Interaja com os relatórios</h2>
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiZDc0ZjI0NjItNjQ4Zi00MThkLThlZTQtZTQ4N2UxZGNlZjYwIiwidCI6ImVmMTE5ZjkyLWU3YmEtNDNhYi05Y2E2LWNjNDRjMzU3YjEwNSIsImMiOjZ9" target="_blank"><img src="img/Relatório 1.png" class="img-relatorio"></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Guilherme Henrique Oliveira Silva" />
+  <meta name="description" content="Página de projetos e relatórios interativos do portfólio de Guilherme Henrique Oliveira Silva." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/projetos.css" />
+  <title>Projetos | Guilherme Henrique Oliveira Silva</title>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+  <header>
+    <div class="div-nav">
+      <nav aria-label="Navegação principal">
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#cards">Tecnologias</a></li>
+          <li class="nav-item"><a class="nav-link" href="Projetos.html" aria-current="page">Projetos</a></li>
+        </ul>
+        <button class="hamburger" type="button" aria-label="Abrir menu" aria-controls="nav-menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+    <section class="sec-container">
+      <div class="container">
+        <div class="title-portfolio">
+          <h1>Confira meus projetos</h1>
+          <h2>Relatórios e dashboards</h2>
         </div>
-        
-      </section>
-    </main>
-     
-</html>
 
-<script src="index.js" type="text/javascript"></script>
+        <section class="relatorios" aria-labelledby="titulo-relatorios">
+          <h2 id="titulo-relatorios">Clique e interaja com os relatórios</h2>
+
+          <div class="dash-one">
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiZDc0ZjI0NjItNjQ4Zi00MThkLThlZTQtZTQ4N2UxZGNlZjYwIiwidCI6ImVmMTE5ZjkyLWU3YmEtNDNhYi05Y2E2LWNjNDRjMzU3YjEwNSIsImMiOjZ9"
+              target="_blank" rel="noopener noreferrer" aria-label="Abrir relatório Power BI em nova aba">
+              <img src="img/Relatório 1.png" class="img-relatorio" alt="Prévia de relatório Power BI" loading="lazy" />
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js" defer></script>
+</body>
+
+</html>
