@@ -1,51 +1,65 @@
 .img-banner {
-  margin-top: 50px;
-  width: 150vh;
-  padding: 20px;
-  display: flex;
-  background: rgba(2, 0, 36, 0.877) !important;
-  height: 100vh;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(40, 7, 251, 0.436) 84%,
-    rgba(255, 0, 25, 0.093) 100%
-  );
-  border-radius: 10px;
+  margin-top: 20px;
+  width: min(980px, 94vw);
+  padding: 28px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  background: linear-gradient(150deg, rgba(14, 22, 52, 0.95), rgba(25, 45, 112, 0.72)) !important;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
 }
 
 .relatorios {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    height: 100%
-  }
-  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 16px;
+}
+
+.relatorios h2 {
+  font-size: clamp(1.05rem, 2.1vw, 1.4rem);
+}
+
+.dash-one {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 100%;
+}
+
+.img-relatorio {
+  width: min(92vw, 900px);
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dash-one a:hover .img-relatorio {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 450px) {
+  .relatorios,
   .dash-one {
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
-    margin-top: 10px;
-    height: 100%
+    align-items: center;
   }
-  
-  .img-relatorio {
-    height: 300px;
-  }
-  
 
-  @media screen and (max-width: 450px) {
-    .relatorios, .dash-one {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      
-      .dash-one {
-      }
-      
-      .img-relatorio {
-      
-        height: 250px;
-      }
+  .img-banner {
+    min-height: auto;
+    width: 96vw;
+    padding: 16px;
   }
+
+  .img-relatorio {
+    width: 92vw;
+  }
+}
